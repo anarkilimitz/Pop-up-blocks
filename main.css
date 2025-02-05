@@ -5,6 +5,19 @@
   margin-bottom: 50px; /* Отступ между блоками */
 }
 
+/* Добавляем задержку для каждого блока */
+.content-block:nth-child(1) {
+  transition-delay: 0.2s; /* Первый блок появится через 0.2 секунды */
+}
+
+.content-block:nth-child(2) {
+  transition-delay: 0.4s; /* Второй блок появится через 0.4 секунды */
+}
+
+.content-block:nth-child(3) {
+  transition-delay: 0.6s; /* Третий блок появится через 0.6 секунды */
+}
+
 .content-block.visible {
   opacity: 1; /* Показываем блок */
   transform: translateY(0); /* Возвращаем блок на место */
